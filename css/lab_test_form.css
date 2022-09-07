@@ -1,0 +1,348 @@
+body {
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    background-color: #FDFEFE;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.215);
+    box-sizing: border-box;
+    height: 700px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10%;
+    padding: 10px 0px;
+    position: relative;
+    width: 90%;
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container>#contact-form-container {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    height: 100%;
+    float: inline-start;
+    margin-left: 2%;
+
+}
+
+.container>#image-container {
+    display: inline-block;
+    text-align: left;
+    width: 650px;
+    height: 650px;
+    position: fixed;
+}
+
+.container>#image-container>img {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+.text_input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    color: #555;
+    box-sizing: border-box;
+    font-family: 'Arvo';
+    font-size: 18px;
+    height: 50px;
+    margin-left: 2%;
+    padding: 10px 0px;
+    position: relative;
+    width: 300px;
+}
+
+.text_input:focus {
+    transform: scale(1);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(81, 203, 238, 1);
+
+}
+
+.text_input::-webkit-input-placeholder {
+    color: #AAA;
+}
+
+.text_input_row_2 {
+    margin-top: 3%;
+}
+
+h3 {
+    margin-left: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.select-input-row-3 {
+    margin-top: 5%;
+    width: 200px;
+    padding: 20px;
+    height: auto;
+    outline: none;
+    margin-top: 10%;
+
+}
+
+
+select {
+    width: 300px;
+    outline: none;
+    -moz-appearance: none;
+}
+
+
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border: 1px solid black;
+}
+
+input[type=checkbox]:checked:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background-color: #1E80EF;
+}
+
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+
+.check-container label {
+    margin-left: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+.check-container {
+    margin-top: 10%;
+}
+
+option {
+    font-size: 5px;
+}
+
+.label-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.label-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+
+.label-container:hover input~.checkmark {
+    background-color: #2195f330;
+}
+
+.label-container input:checked~.checkmark {
+    background-color: #1E80EF;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.datetimepicker {
+    display: inline-flex;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid skyblue;
+    border-radius: 8px;
+    height: 50px;
+    width: 450px;
+    margin-left: 3%;
+    margin-bottom: 5%;
+}
+
+
+
+.datetimepicker>input {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    color: inherit;
+    appearance: none;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+}
+
+.datetimepicker>input[type=date] {
+    width: 10rem;
+    padding: .25rem .5rem .25rem .5rem;
+    border-right-width: 10px;
+}
+
+.datetimepicker>input[type=time] {
+    width: 7.5rem;
+    padding: .25rem .5rem .25rem .5rem;
+    border-left-width: 10px;
+}
+
+.datetime-container {
+    margin-bottom: 5%;
+}
+
+.radio-container {
+    margin-left: 2%;
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+    margin-left: 2%;
+}
+
+.dropdown .dropdown-toggle {
+    appearance: none;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 35px 12px 12px;
+    border-radius: 3px;
+    text-align: left;
+    position: relative;
+    max-width: 300px;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+.dropdown .dropdown-toggle::after {
+    content: '';
+    border-width: 6px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: inherit;
+    position: absolute;
+    right: 12px;
+    top: calc(50% + 3px);
+    transform: translateY(-50%);
+}
+
+.dropdown .dropdown-toggle.active::after {
+    border-color: transparent;
+    border-bottom-color: inherit;
+    top: calc(50% - 3px);
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    top: 80%;
+    transform: translateX(-50%);
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(150, 150, 150, 0.65);
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    max-width: 320px;
+    width: calc(100% + 24px);
+    border-radius: 3px;
+    z-index: 10;
+    visibility: hidden;
+    overflow: auto;
+    max-height: 200px;
+    margin-left: 20%;
+}
+
+.dropdown .dropdown-menu[aria-expanded="true"] {
+    visibility: visible;
+}
+
+.dropdown .dropdown-menu>li {
+    height: 35px;
+    display: block;
+    align-items: center;
+    padding: 10px 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+.dropdown .dropdown-menu>li:hover,
+.dropdown .dropdown-menu>li:focus {
+    outline: none;
+    background: #f2f2f2;
+}
+
+#district-placeholder {
+    margin-left: 2%;
+    margin-top: 5%;
+}

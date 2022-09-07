@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="css/lab_test_form.css">
+</head>
+
+<body>
+</body>
+<div class="container">
+
+    <div id="contact-form-container">
+        <h3>1. Your Contact Details</h3>
+        <div class="text_input_row_1">
+            <input class="text_input" placeholder="Full Name" type="text">
+            <input class="text_input" placeholder="Patient Id if exists" type="text">
+        </div>
+        <div class="text_input_row_2">
+            <input class="text_input" placeholder="Contact Number" type="text">
+            <input class="text_input" placeholder="Email Id" type="text">
+        </div>
+
+        <h3>2. Address</h3>
+        <div class="text_input_row_1">
+            <input class="text_input" placeholder="House Number" type="text">
+            <input class="text_input" placeholder="Street" type="text">
+        </div>
+        <div class="text_input_row_2">
+            <input class="text_input" placeholder="Area" type="text">
+        </div>
+
+        <h5 font-size="10px" id="district-placeholder">District</h5>
+        <div class="dropdown" id="district-dropdown">
+            <button class="dropdown-toggle" type="button" aria-haspopup>
+                Choose
+            </button>
+            <ul class="dropdown-menu" id="inputDistrict" role="listbox" aria-expanded="true">
+            </ul>
+        </div>
+
+
+        <div class="check-container" id="checkDiv">
+            <h3>3. Choose the Test Type</h3>
+            <input type="checkbox" id="type1" name="type1" value="CBC">
+            <label for="type1" font-size="5px"> CBC</label><br>
+            <input type="checkbox" id="type2" name="type2" value="Complete Urine">
+            <label for="type2"> Complete Urine</label><br>
+            <input type="checkbox" id="type3" name="type3" value="Lipid Profile">
+            <label for="type3"> Lipid Profile</label><br>
+            <input type="checkbox" id="type4" name="type4" value="Thyroid Stimulating Hormone(TSH)">
+            <label for="type4"> Thyroid Stimulating Hormone(TSH)</label><br>
+            <input type="checkbox" id="type5" name="type5" value="Glucose Test">
+            <label for="type5"> Glucose Test</label><br><br>
+        </div>
+
+        <h3>4. Do you want a hard copy of the report also?</h3>
+        <div class="radio-container">
+            <label class="label-container">Yes
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="label-container">No
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <h3>5. Select Your Comfortable Date and Time</h3>
+        <div class="datetime-container">
+            <div class="datetimepicker">
+                <input type="date" id="date" value="2022-09-01">
+                <span></span>
+                <input type="time" id="time" value="08:00">
+            </div>
+        </div>
+
+    </div>
+    <div id="image-container">
+        <img src="images/Lab-Test/lab-test.jpg" alt="contact image">
+    </div>
+</div>
+<script src="js/lab-test-form.js"></script>
+</body>
+
+</html>
